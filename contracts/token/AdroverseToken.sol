@@ -15,12 +15,12 @@ contract AdroverseToken is ERC20, Ownable{
 
     bool public bpEnabled;
     bool public bpDisabledForever;
-    address public deployAddress = 0xa90C806CacD1CEb6519F861FEDBd214374C00Fa7;
+    address public vaultAddress = 0xa90C806CacD1CEb6519F861FEDBd214374C00Fa7;
 
     constructor()
         ERC20("Adroverse Token", "ADR")
     {
-        _mint(deployAddress, 1_000_000_000 * 10**18);
+        _mint(vaultAddress, 1_000_000_000 * 10**18);
     }
 
 
